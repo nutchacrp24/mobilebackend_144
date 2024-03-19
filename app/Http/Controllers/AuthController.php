@@ -34,7 +34,7 @@ class AuthController extends Controller
         $token = $user->createToken($request->userAgent(), [$fileds['role']])->plainTextToken;
         $reponse = [
             'user' => $user,
-            'token' => $token
+            'token' => $token,
         ];
         return response($reponse, 201);
     }
