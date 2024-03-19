@@ -17,14 +17,11 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+
 Route::get('/', function () {
-    return "SAWATDEE CSIT";
+    return "Hello CSIT";
 });
-Route::get('about', function () {
-    return "About Page";
-});
-Route::get(
-    'showprofile',
-    [HomeController::class,
-    'showprofile']
-    );
+
+Route::get('profile' ,[HomeController ::class ,"showprofile"]
+);
